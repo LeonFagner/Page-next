@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "../../public/images/logo.svg"
-import Link from "next/link";
 import styles from"../Header/Header.module.scss"
+import Button from "../Button/Button"
 
 
 
@@ -18,7 +18,7 @@ export default function Header() {
             <a href="/">Cases </a>
         </div>
         <div className={styles.action}>
-          <button className={styles.button}>Fale conosco</button>
+          <Button title="Fale Conosco"/>
         </div>
       </div>
     );

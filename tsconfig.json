@@ -31,7 +31,7 @@
     "app/page.js",
     "app/layout.js",
     "app/api/hello.jsx",
-    
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
