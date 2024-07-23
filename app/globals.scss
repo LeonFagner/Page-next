@@ -1,11 +1,14 @@
 
+@import "/styles/mixins/colors.scss";
+@import "/styles/mixins/colors.scss";
 *{
     margin: 0;
     
 }
 
 body{
-    background: black;
-    color: white;
+    background: $purple-color;
+    color: $white-color;
+
 }
 
