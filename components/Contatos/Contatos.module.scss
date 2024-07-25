@@ -8,7 +8,11 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
     justify-content: space-between;
-    gap: 150px;
+    gap: 1rem 3rem;
+    background-image: url("/images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10rem;
 }
 
 .text{
@@ -45,4 +49,20 @@
         display: grid;
         gap: 23px;
     }
+}
+.footer{
+    grid-column-start: 2;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 1rem;
+    line-height: 2rem;
+    color: $gray-color;
+    font-weight: 500;
+  
+    span{
+        color: $white-color;  
+    }
+}
+.none{
+    text-decoration: none;
 }

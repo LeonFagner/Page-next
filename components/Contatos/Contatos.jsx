@@ -3,6 +3,7 @@ import Styles from "./Contatos.module.scss";
 import Input from "../Input/Input";
 import Select from "../Select/Select"
 import { Value } from "sass";
+import Link from "next/link";
 
 
 
@@ -34,8 +35,12 @@ export default function Contatos (){
                     
                 </Select>
             <Button  title="Enviar" kind="full"/>    
-            </form>        
+            </form>   
+            
                
+            </div>
+            <div className={Styles.footer}>
+                <p>Ao enviar esse formulário, você reconhece que leu e concorda com a nossa <Link href="/" className={Styles.none}><span> Política de Privacidade</span></Link> .</p>     
             </div>
 
         </div>
