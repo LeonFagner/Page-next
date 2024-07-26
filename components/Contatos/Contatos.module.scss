@@ -1,5 +1,6 @@
 @import "/styles//mixins/colors.scss";
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
 
 
 .container{
@@ -13,13 +14,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10rem;
+
+    @include Phone{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        gap: 0;
+        margin-bottom: 4rem;
+    
+        
+        
+    }
+
+
 }
 
 .text{
     span{
         font-size: 30px;
-        font-weight: 600px;
+        font-weight: 600;
         color: $green2-color;
+       
     }
     h1{
         font-size: 65px;
@@ -31,24 +47,53 @@
         font-weight: 300;
         opacity: 0.7;
     }
+    @include Phone{
+        padding: 20px;
+        span{
+            font-size: 25px;
+            font-weight: 300;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 100;
+        }
+    }
 }
 
 .form{
-    padding: 38px 31px;
+    padding: 38px 31px ;
     background-color: $white-color;
     border: 0.5 solid $gray3-color ;
     border-radius: 10px;
-
+    padding:10px;
+    height: 667px;
+    width: 586px;
+    
     h1{
         color: $purple-color;
         font-size: 35px;
         font-weight: bold;
-        
     }
     form{
         display: grid;
         gap: 23px;
     }
+    @include Phone{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        h1{
+            font-size: 27px;
+        }
+        form{
+            gap: 10px;
+        }
+    }
+    
 }
 .footer{
     grid-column-start: 2;
@@ -58,7 +103,6 @@
     line-height: 2rem;
     color: $gray-color;
     font-weight: 500;
-  
     span{
         color: $white-color;  
     }

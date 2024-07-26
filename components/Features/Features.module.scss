@@ -1,5 +1,6 @@
 @import "/styles/mixins/colors.scss";
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
 
 .container{
     @include Padding;
@@ -25,11 +26,31 @@
         opacity: 0.7;  
        
     }
+    @include Phone{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        h1{
+            font-size: 40px;;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
 }
 .features{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 68px;
+
+    @include Phone{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    }
 }
 
 
@@ -55,6 +76,10 @@
         text-align: left;
         padding-top: 20px;
     }
-    
+    @include Phone{
+        width: 300px;
+       padding: 10px 20px 20px 20px;
+       height: 300px;
+    }
 }
 

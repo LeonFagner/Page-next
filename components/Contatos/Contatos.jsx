@@ -1,8 +1,7 @@
 import Button from "../Button/Button";
 import Styles from "./Contatos.module.scss";
 import Input from "../Input/Input";
-import Select from "../Select/Select"
-import { Value } from "sass";
+import Select from "../Select/Select";
 import Link from "next/link";
 
 

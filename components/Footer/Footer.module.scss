@@ -1,5 +1,6 @@
 
 @import "/styles/mixins/colors.scss";
+@import "/styles/mixins/responsive.scss";
 
 .container{
     padding: 0 11.85rem;
@@ -8,6 +9,9 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
 
+    @include Phone{
+      display: none;
+    }
 
 }
 
@@ -21,7 +25,6 @@
     .title{
         font-size: 29px;
         color: $white-color;
-
     }
     h1{
         font-size: 24px;
@@ -39,7 +42,7 @@
     .icons{
      
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
         gap: 2rem;
         padding-top: 20px;

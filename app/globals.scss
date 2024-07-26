@@ -1,14 +1,17 @@
+@import "/styles/mixins/colors.scss";
 
-@import "/styles/mixins/colors.scss";
-@import "/styles/mixins/colors.scss";
+@import "/styles/mixins/responsive.scss";
 *{
     margin: 0;
-    
+    max-width: 100%;
+  
 }
 
 body{
+  
     background: $purple-color;
     color: $white-color;
 
+    
 }
-
+ 

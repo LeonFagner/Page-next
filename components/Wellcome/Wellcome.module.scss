@@ -1,28 +1,31 @@
 @import "/styles/mixins/colors.scss";
 @import "/styles/mixins/padding.scss";
+@import "/styles/mixins/responsive.scss";
+@import "/styles/mixins/fonts.scss";
 
 .container{
-    @include Padding;
-    
+    @include Padding;    
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-image: url("/images/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    
-   
+
+    @include Phone{
+        display: block;
+        text-align: justify;
+        padding: 1rem 1rem;
+    }
 }
 .text{
     h1{
-       
+        @include SizeTitle;
         font-weight: bold;
-        font-size: 71px;
     }
     p{
-        font-size: 30px;
+        @include SizeSubtitle;
         opacity: 0.7;
-        padding-bottom: 15px;
-       
+        padding-bottom: 15px;  
     }
 }
 .image{
