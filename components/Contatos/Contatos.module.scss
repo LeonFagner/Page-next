@@ -21,12 +21,10 @@
         text-align: center;
         padding: 0;
         gap: 0;
-        margin-bottom: 4rem;
-    
-        
+        margin-bottom: 4rem;  
         
     }
-
+    
 
 }
 
@@ -60,6 +58,7 @@
         p{
             font-size: 20px;
             font-weight: 100;
+            
         }
     }
 }
@@ -69,7 +68,6 @@
     background-color: $white-color;
     border: 0.5 solid $gray3-color ;
     border-radius: 10px;
-    padding:10px;
     height: 667px;
     width: 586px;
     
@@ -85,9 +83,12 @@
     @include Phone{
         display: grid;
         grid-template-columns: 1fr;
+        width: 300px;
+        height: auto;
         margin: auto;
         h1{
             font-size: 27px;
+            padding: 10px 0;
         }
         form{
             gap: 10px;
@@ -103,8 +104,20 @@
     line-height: 2rem;
     color: $gray-color;
     font-weight: 500;
+    p{
+        width: 606px;
+        
+    }
     span{
         color: $white-color;  
+    }
+
+    @include Phone{
+        padding-top: 15px;
+        p{
+            width: 340px;
+            
+        }
     }
 }
 .none{

@@ -10,7 +10,10 @@
     grid-template-columns: repeat(4,1fr);
 
     @include Phone{
-      display: none;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      padding: 10px;
     }
 
 }
@@ -48,6 +51,33 @@
         padding-top: 20px;
     
     }
+
+    @include Phone{
+        .title{
+            font-size: 20px;
+        }
+        h1{
+            font-size: 23px;
+            text-align: start;
+        }
+       
+       
+       p{
+        font-size: 20px;
+       }
+       .alignRight{
+        display: none;
+       }
+       .icons{
+        display: flex;
+        justify-content: flex-start;
+       }
+       .allRightReserved{
+        display: none;
+       }
+
+    }
+
      
 }
 
