@@ -1,7 +1,7 @@
+"use client";
 import Styles from "./Button.module.scss"
 
-
-export default function Button({title, kind}){
+export default function Button({title, kind, onClick}){
     const generationClassByKind = () => {
         if(kind === "secundary") return Styles.secundary
         if(kind === "full") return Styles.full;
@@ -9,6 +9,10 @@ export default function Button({title, kind}){
     }
     
     return(
-        <button className={`${Styles.button} ${generationClassByKind()}`}>{title}</button>
+        <button className={`${Styles.button} ${generationClassByKind()}`}
+         onClick={() => onClick()}
+         >
+            {title}
+        </button>
     )
 }

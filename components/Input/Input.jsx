@@ -1,6 +1,6 @@
 import Styles from "./Input.module.scss";
 
-export default function Input({type, placeholder, pattern, required}){
+export default function Input({type, placeholder, pattern, required, onBlur}){
 
     return(
        
@@ -10,6 +10,7 @@ export default function Input({type, placeholder, pattern, required}){
                 pattern={pattern}
                 required={required}
                 className={Styles.input}
+                onBlur={onBlur}
         />
     )
 }

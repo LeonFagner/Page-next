@@ -25,12 +25,13 @@
       "@/*": [
         "./*"
       ]
-    }
+    },
+    "target": "ES2017"
   },
   "include": [
     "app/page.js",
     "app/layout.js",
-    "app/api/hello.jsx",
+    "app/api/router.js",
     ".next/types/**/*.ts"
   ],
   "exclude": [
