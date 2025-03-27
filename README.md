@@ -16,7 +16,6 @@ Este projeto consiste em uma **landing page de reservas** desenvolvida utilizand
 
 - **Next.js:** Framework para desenvolvimento de aplicações React com funcionalidades de SSR (Server-Side Rendering) e SSG (Static Site Generation).
 - **React:** Biblioteca JavaScript para construção da interface do usuário.
-- **Styled-Components:** Para estilização dos componentes de forma modular.
 - **SCSS:** Para a organização e modularização dos estilos CSS, proporcionando uma estrutura mais flexível e escalável.
 - **EmailJS:** Serviço para envio de e-mails sem a necessidade de backend, utilizado para enviar as reservas feitas pelo usuário.
 - **React Hook Form:** Biblioteca para facilitar o gerenciamento de formulários no React, com validações e controle de erros.
