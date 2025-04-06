@@ -1,22 +1,39 @@
-# Landing Page de Reservas
+# 🗓️  Page de Reservas
 
-## Descrição
+Este projeto é uma landing page interativa desenvolvida com **Next.js**, que permite aos usuários realizarem **reservas de forma prática e eficiente**. Com uma interface amigável e responsiva, a página conta com integração ao **EmailJS**, possibilitando o envio direto das informações para um e-mail pré-configurado via **SMTP**, **sem necessidade de backend próprio**.
 
-Este projeto consiste em uma **landing page de reservas** desenvolvida utilizando o **Next.js**. A aplicação foi projetada para oferecer uma interface intuitiva para os usuários, onde eles podem realizar reservas de maneira simples e eficiente. O formulário de reservas é integrado com o **EmailJS**, permitindo o envio das informações diretamente para um e-mail configurado, sem a necessidade de backend próprio. Para estilização, foi utilizado **SCSS**, proporcionando uma estrutura modular e organizada de estilos.
+## 🚀 Funcionalidades
 
-## Funcionalidades
+- ✅ **Formulário de Reservas**  
+  Os usuários podem preencher seus dados e enviar uma solicitação de reserva rapidamente.
 
-- **Formulário de Reservas:** Um formulário interativo onde os usuários podem inserir seus dados para realizar uma reserva.
-- **Validação de Campos:** Validação dos campos do formulário para garantir que os dados inseridos sejam corretos.
-- **Envio de E-mail com EmailJS:** As reservas são enviadas diretamente para o seu e-mail utilizando a API do **EmailJS**.
-- **Interface Intuitiva:** A página foi construída com uma interface limpa e fácil de usar, garantindo uma boa experiência de usuário.
-- **Estilização com SCSS:** Utilização do SCSS para organizar e modularizar o código de estilo.
+- ✅ **Validação de Campos**  
+  Todos os campos do formulário são validados para garantir que os dados sejam enviados corretamente.
 
-## Tecnologias Utilizadas
+- ✅ **Envio de E-mails com EmailJS + SMTP**  
+  As informações preenchidas são encaminhadas diretamente para seu e-mail utilizando o serviço EmailJS com suporte ao protocolo SMTP.
 
-- **Next.js:** Framework para desenvolvimento de aplicações React com funcionalidades de SSR (Server-Side Rendering) e SSG (Static Site Generation).
-- **React:** Biblioteca JavaScript para construção da interface do usuário.
-- **SCSS:** Para a organização e modularização dos estilos CSS, proporcionando uma estrutura mais flexível e escalável.
-- **EmailJS:** Serviço para envio de e-mails sem a necessidade de backend, utilizado para enviar as reservas feitas pelo usuário.
-- **React Hook Form:** Biblioteca para facilitar o gerenciamento de formulários no React, com validações e controle de erros.
+- ✅ **Interface Responsiva e Intuitiva**  
+  Experiência do usuário otimizada para dispositivos móveis e desktops.
 
+- ✅ **Estilização com SCSS**  
+  Estilos organizados de forma modular e escalável utilizando SCSS.
+
+.
+
+## 🧰 Tecnologias Utilizadas
+
+- **[Next.js](https://nextjs.org/)** — Framework React com suporte a SSR e SSG.
+- **[React](https://react.dev/)** — Biblioteca para construção de interfaces modernas.
+- **[SCSS](https://sass-lang.com/)** — Pré-processador CSS para código mais limpo e reutilizável.
+- **[EmailJS](https://www.emailjs.com/)** — Serviço para envio de e-mails via front-end com suporte a SMTP.
+- **[React Hook Form](https://react-hook-form.com/)** — Biblioteca para lidar com formulários e validação de dados no React.
+
+
+
+
+## 📦 Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repo.git
